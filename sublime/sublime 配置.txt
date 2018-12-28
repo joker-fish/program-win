@@ -1,0 +1,61 @@
+安装 control
+
+import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+
+主题包
+material theme
+配置：
+{
+	"added_words":
+	[
+		"Laravel"
+	],
+	"caret_style": "phase",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"findreplace_small": true,
+	"font_face": "OperatorMono-Book",
+	"font_size": 15,
+	"highlight_line": false,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Markdown",
+		"SublimeLinter-jshint",
+		"Vintage"
+	],
+	"line_numbers": true,
+	"line_padding_bottom": 9,
+	"line_padding_top": 9,
+	"open_files_in_new_window": false,
+	"phpunit-sublime-terminal": "iTerm",
+	"remember_full_screen": true,
+	"remember_open_files": false,
+	"show_definitions": false,
+	"show_panel_on_build": false,
+	"tab_size": 4,
+	"tabs_small": false,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
+
+markdown包
+
+markdown preview
+
+markdownedit
+
+自动对齐
+
+Alignment
+
+
+快捷键
+
+ctrl+p
+
+ctrl+r
+
+ctrl+g
